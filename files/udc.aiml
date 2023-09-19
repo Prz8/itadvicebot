@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+        <pattern>start</pattern>
+        <template>Hey there! I'm your friendly neighborhood Computer Science Career Guru 🤖. Ready to embark on a journey to discover your dream job?
+            <button>
+                <text>Yes, let's roll!</text>
+                <postback>interests</postback>
+            </button>
+            <button>
+                <text>No, I'd rather not (but I'll be back)</text>
+                <postback>exit</postback>
+            </button>  
+        </template>
+    </category>
+    
+    <category>
+        <pattern>hello</pattern>
+        <template>Hello, tech enthusiast! I'm your trusty Computer Science career sidekick 🚀. Shall we decipher your ideal career path together?
+            <button>
+                <text>Absolutely!</text>
+                <postback>interests</postback>
+            </button>
+            <button>
+                <text>No, I'll pass (for now)</text>
+                <postback>exit</postback>
+            </button>  
+        </template>
+    </category>
+    
+    <category>
+        <pattern>hi</pattern>
+        <template>Hiya! I'm the bot with the plan, the Career Wizard of Computer Science ✨. Ready to embark on this epic quest?
+            <button>
+                <text>Let's do it!</text>
+                <postback>interests</postback>
+            </button>
+            <button>
+                <text>Nah, maybe later</text>
+                <postback>exit</postback>
+            </button>  
+        </template>
+    </category>
+   
+    <category>
+        <pattern>exit</pattern>
+        <template>Thanks for the chat, tech explorer! If you ever need guidance in the digital jungle, remember, I'm just a click away.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>itquestion</pattern>
+        <template>Do you have a secret crush on coding?
+        <br></br><br></br>
+            <button>
+                <text>Oh, madly in love!</text>
+                <postback>codingquestion</postback>
+            </button>
+            <button>
+                <text>Coding and I? Nah, we're just friends</text>
+                <postback>nextquestion</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>developer</pattern>
+        <template>Well, if you've got a thing for coding, you might just be the next Code Jedi! Front-end, Back-end, or Database Developer could be your calling.
+        <br></br><br></br>
+            <button>
+                <text>Back to square one, please!</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Enough tech talk for today, I'm out!</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+
+     <category>
+        <pattern>networkingquestion</pattern>
+        <template>Do you dream of conquering network hardware like a superhero, or are you more into the "protect the city from cyber-villains" kind of gig?
+            <button>
+                <text>I'm all about routers and switches!</text>
+                <postback>networking</postback>
+            </button>
+            <button>
+                <text>Defending the digital realm is my jam!</text>
+                <postback>cybersecurity</postback>
+            </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>networking</pattern>
+        <template>If you're ready to be the Networking Ninja, consider a path as a Network Engineer or Administrator. Your routers and switches await!
+        <br></br><br></br>
+            <button>
+                <text>Let's reset and start anew!</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>Time for my tech escape</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>cybersecurity</pattern>
+        <template>Ready to be the guardian of the digital realm? Cybersecurity Analyst could be your superhero identity!
+        <br></br><br></br>
+            <button>
+                <text>Take me back to the beginning!</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>I'm exiting the tech fortress</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>it</pattern>
+        <template>IT Technician or System Administrator, the unsung heroes of the tech world. Ready to don the IT cape?
+        <br></br><br></br>
+            <button>
+                <text>Back to square one, please!</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>I'm calling it a day</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+
+     <category>
+        <pattern>interests</pattern>
+        <template>To better assist you, I'd like to learn more about your interests through a few questions.
+        <br></br><br></br>
+        Do you have a passion for coding?
+            <button>
+                <text>Oh, absolutely!</text>
+                <postback>codingquestion</postback>
+            </button>
+            <button>
+                <text>Coding and I? We're still figuring it out</text>
+                <postback>nextquestion</postback>
+            </button>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>codingquestion</pattern>
+        <template>Would you prefer a job that involves coding extensively, sporadically, or not at all?
+        <br></br><br></br>
+            <button>
+                <text>I'm all in for the code marathon!</text>
+                <postback>developer</postback>
+            </button>
+            <button>
+                <text>Coding on the side, please</text>
+                <postback>nextquestion</postback>
+            </button>
+
+
+            <button>
+                <text>Coding? Nah, I'm on vacation</text>
+                <postback>nextquestion</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>management</pattern>
+        <template>If you see yourself leading the tech troops, roles like IT Director or Program Manager might be your kingdom to rule.
+        <br></br><br></br>
+            <button>
+                <text>Back to the tech drawing board!</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>I'm exiting the tech leadership realm</text>
+                <postback>exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion</pattern>
+        <template>Do you enjoy configuring and working with network hardware like routers and switches, or do you prefer to be a part of the tech ensemble?
+            <button>
+                <text>I'm the network maestro!</text>
+                <postback>networkingquestion</postback>
+            </button>
+            <button>
+                <text>I'm a tech ensemble performer</text>
+                <postback>nextquestion2</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion2</pattern>
+        <template>Do you see yourself as a tech leader or a tech team member?
+            <button>
+                <text>I'm the tech commander!</text>
+                <postback>management</postback>
+            </button>
+            <button>
+                <text>I'm a tech team player</text>
+                <postback>nextquestion3</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion3</pattern>
+        <template>Do you enjoy helping people with their IT problems or prefer staying in the tech shadows?
+            <button>
+                <text>I'm the tech helpdesk superstar!</text>
+                <postback>it</postback>
+            </button>
+            <button>
+                <text>I'm more of a tech recluse</text>
+                <postback>nextquestion4</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nextquestion4</pattern>
+        <template>Considering your responses, you might want to explore career paths beyond information technology. A Computer Science degree offers versatility. Consider options in public service, mathematics, teaching, or explore creative opportunities. Thanks for hanging out with the WGU IT Advice Bot. Come back for more tech adventures anytime!
+            <button>
+                <text>Let's reboot and start anew!</text>
+                <postback>start</postback>
+            </button>
+            <button>
+                <text>I'm exiting the tech circus</text>
+                <postback>exit</postback>
+            </button>      
+        </template>
+    </category>
+
+</aiml>
